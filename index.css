@@ -2,7 +2,7 @@
 
 :root {
   --blue_main: #263347ff;
-  --blue_main_80: #263348CC;
+  --blue_main_80: #263348cc;
   --blue_main_60: #26334899;
   --blue_main_40: #47262666;
   --blue_lighter: #5473a0ff;
@@ -15,18 +15,47 @@
 
 /* FONTS */
 
-.blue_main { color: var(--blue_main); }
-.blue_lighter { color: var(--blue_lighter); }
-.green_main { color: var(--green_main); }
-.green_darker { color: var(--green_darker); }
-.black_main { color: var(--black_main); }
-.white_main { color: var(--white_main); }
-.white_pure { color: var(--white_pure); }
-.font_slab { font-family: "Roboto Slab", serif; font-style: normal; }
-.font_comment { font-family: "Noto Serif", serif; font-style: italic; }
-.font_text { font-family: "Noto Sans", sans-serif; font-style: normal; }
-.font_legend { font-family: "Noto Sans", sans-serif; font-style: normal; }
-.font_subtext { font-family: "Noto Sans", sans-serif; font-style: normal; }
+.blue_main {
+  color: var(--blue_main);
+}
+.blue_lighter {
+  color: var(--blue_lighter);
+}
+.green_main {
+  color: var(--green_main);
+}
+.green_darker {
+  color: var(--green_darker);
+}
+.black_main {
+  color: var(--black_main);
+}
+.white_main {
+  color: var(--white_main);
+}
+.white_pure {
+  color: var(--white_pure);
+}
+.font_slab {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+}
+.font_comment {
+  font-family: "Noto Serif", serif;
+  font-style: italic;
+}
+.font_text {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+}
+.font_legend {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+}
+.font_subtext {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+}
 
 /* BASIC STYLE */
 
@@ -71,8 +100,8 @@ body {
   align-self: flex-end;
   text-align: right;
   font-size: 2.5em;
-  margin-top: .25em;
-  margin-bottom: .25em;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
 }
 
 .font_text {
@@ -112,7 +141,7 @@ body {
   align-items: flex-end;
 }
 
-#socials  img {
+#socials img {
   width: 50px;
 }
 
@@ -132,11 +161,11 @@ body {
 }
 
 #cv {
- object-fit: contain;
- max-height: 90vh;
- max-width: 90vw;
- margin: 2em;
- border-radius: 1em;
+  object-fit: contain;
+  max-height: 90vh;
+  max-width: 90vw;
+  margin: 2em;
+  border-radius: 1em;
 }
 
 .competences {
@@ -275,25 +304,26 @@ body {
 
 ::placeholder {
   color: var(--white_main);
-  opacity: .5;
+  opacity: 0.5;
   font-family: "Roboto", sans-serif;
 }
 
-.contact > input, .contact > textarea {
+.contact > input,
+.contact > textarea {
   border: none;
   background: var(--blue_main);
-  margin: .5em 0;
-  padding: .5em;
+  margin: 0.5em 0;
+  padding: 0.5em;
   resize: none;
 }
 
-.contact > input[type=submit] {
+.contact > input[type="submit"] {
   width: 10em;
   align-self: flex-end;
   color: var(--white_main);
-  opacity: .75;
-  border-radius: .5em;
-  font-size: .9em;
+  opacity: 0.75;
+  border-radius: 0.5em;
+  font-size: 0.9em;
 }
 
 form.font_text {
@@ -335,12 +365,16 @@ form.font_text {
     height: 0;
   }
 
-  .project, .project:nth-child(even) {
+  .project,
+  .project:nth-child(even) {
     flex-direction: column;
     align-items: center;
   }
 
-  .project *, .projet:nth-child(even) *, .project > .text, .project:nth-child(even) > .text {
+  .project *,
+  .projet:nth-child(even) *,
+  .project > .text,
+  .project:nth-child(even) > .text {
     text-align: left;
   }
 }
@@ -366,12 +400,16 @@ form.font_text {
 
 /* 1024 -> 1440 */
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
-  .project, .project:nth-child(even) {
+  .project,
+  .project:nth-child(even) {
     flex-direction: column;
     align-items: center;
   }
 
-  .project *, .projet:nth-child(even) *, .project > .text, .project:nth-child(even) > .text {
+  .project *,
+  .projet:nth-child(even) *,
+  .project > .text,
+  .project:nth-child(even) > .text {
     text-align: left;
   }
 }
